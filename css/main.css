@@ -41,3 +41,132 @@ footer{
     color: inherit;
     text-decoration: none;
 }
+.section1{
+    color: white;
+}
+.title{
+    font-size: 50px;
+}
+.aboutbutton{
+    font-size: 20px;
+}
+.btn .rounded-pill{
+    border: 20px !important;
+}
+.btn-sosmed {
+    
+}
+#instagram-div{
+    display: none;
+}
+#facebook-div{
+    display: none;
+}
+#youtube-div{
+    display: none;
+}
+#spotify-div{
+    display: none;
+}
+.horizontal-line {
+  display: inline-block;
+  width: 420px;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.spotify-text{
+    
+}
+.btn-spotify{
+    background-color: #61ce70;
+    color: white;
+    margin-top: 20px;
+}
+.btn-facebook{
+    background-color: #2374e1;
+    color: white;
+    margin-top: 20px;
+}
+.btn-youtube{
+    background-color: #CD201F;
+    color: white;
+    margin-top: 20px;
+}
+.btn-instagram{
+    margin-top: 20px;
+    border: 1px solid #e4405f;
+    color: #e4405f;
+    background-color: transparent;
+}
+.btn-instagram:hover {
+  background-color: #e4405f;
+  color: #fff;
+}
+.instagram-feed {
+  max-width: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.youtube-background{
+    width: 100%;
+    background-color: #fc5757;
+    border-radius: 10px;
+}
+.instagram-color{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.elementor-shape-fill {
+  fill: #6381bc;
+}
+.elementor-shape-fill-white {
+  fill: white;
+}
+
+.elementor-shape-fill-blue {
+  fill: #6381bb;
+}
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 35px;
+  }
+  .btn-sosmed {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+  .btn-spotify{
+    margin-top: 0px;
+  }
+  .btn-facebook{
+    margin-top: 0px;
+  }
+  .btn-youtube{
+      margin-top: 0px;
+  }
+  .spotify-text{
+    text-align: center;
+  }
+  .horizontal-line {
+  display: inline-block;
+  width: 250px;
+  height: 2px;
+  background-color: black;
+  }
+}
+.ytplayer{
+  border-radius: 10px;
+}
+.ytplayer.active{
+  border: 5px solid white;
+}
+.transition-footer-div{
+  height: 300px;
+  background: linear-gradient(#6381bc, #e8b7c5);
+}
