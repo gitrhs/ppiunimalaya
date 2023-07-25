@@ -1,0 +1,43 @@
+html *{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #6381bc;
+}
+.bg-main{
+    background-color: #6381bc;
+}
+.bg-alt1{
+    background-color: #E8B7C5;
+}
+
+footer{
+    background-color: #E8B7C5;
+    width: 100%;
+    padding: 20px;
+}
+.footer-right{
+    font-size: 30px;
+    text-align: right;
+    margin-top:-7px;
+}
+@media only screen and (max-width: 720px) {
+  .footer-right {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.footer-left{
+    font-size: 30px;
+    text-align: left;
+}
+@media only screen and (max-width: 720px) {
+  .footer-left {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.still-black{
+    color: inherit;
+    text-decoration: none;
+}
