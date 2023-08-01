@@ -5,9 +5,39 @@
 	font-size: 40px;
 }
 .kepengurusan-ppium{
-	font-size: 30px;
+	font-size: 35px;
 }
 .pageone{
 	background-color: #27355b; 
 	color: white;
+}
+.division-title{
+	font-size: 70px;
+	color: white;
+}
+.divisi-button{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 100px;
+	z-index: 1000;
+}
+.divisi-card-desc{
+	max-width: 1300px;
+	background-color: rgba(255, 255, 255, 0.5); /* Set the background color with 0.6 opacity */
+  	border: none; /* Optional: Remove the border to make it look more like glass */
+  	backdrop-filter: blur(10px);
+	padding: 10px;
+}
+.divisi-card-member{
+	width: 400px;
+	max-width: 100%;
+	background-color: rgba(255, 255, 255, 0.5); /* Set the background color with 0.6 opacity */
+  	border: none; /* Optional: Remove the border to make it look more like glass */
+  	backdrop-filter: blur(10px);
+	padding: 5px;
+}
+@media only screen and (max-width: 720px) {
+	.division-title {
+	  font-size: 30px;
+	}
 }

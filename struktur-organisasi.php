@@ -5,7 +5,7 @@
 	//header
 	include 'core/header.html';
 	?>
-	<link rel="stylesheet" href="css/struktur-organisasi.css?">
+	<link rel="stylesheet" href="css/struktur-organisasi.css?2">
 	</head>
 	<body>
 		<?php
@@ -42,12 +42,13 @@
 			</div>
 		</div>
 		<!-- Division Section -->
+		<br>
 		<div class="container-fluid" style="color: white;">
 			<p class="kepengurusan-ppium text-center"><b>Divisi</b></p>
-			<div class="d-flex flex-wrap justify-content-center">
+			<div class="d-flex flex-wrap justify-content-center divisi-button">
 			  <div class="p-2">
-				<input type="radio" class="btn-check" name="divisi" onclick="updatePage()" id="instagram" value="instagram">
-				<label class="btn btn-outline-light btn-sosmed btn-filter " for="instagram">
+				<input type="radio" class="btn-check" name="divisi" onclick="updatePage()" id="BPH" value="BPH">
+				<label class="btn btn-outline-light btn-sosmed btn-filter " for="BPH">
 				  BPH
 				</label>
 			  </div>
@@ -94,9 +95,36 @@
 					</label>
 			  </div>
 			</div>
+			<!--Div for division -->
+			<!-- BPH -->
+			<div id="division-container"></div>
+			<br>
 		</div>
+		<!-- JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js" integrity="sha512-FRX6MYITclzDyyMmSQLgZoZTfE+GLzAQpjs15adVZMY6AqhsrBLx8UZwp4FoqrrRFWY9TiaPwja7EY5fk309vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+		<!-- JS end -->
 		<!-- Page JS -->
 		<script>
+			//load division container
+			function loadContent(url) {
+			const xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function () {
+				if (this.readyState === 4 && this.status === 200) {
+				document.getElementById('division-container').innerHTML = this.responseText;
+				}
+			};
+			xhttp.open("GET", url, true);
+			xhttp.send();
+			}
+
+			function updatePage() {
+			var selectedValue = document.querySelector('input[name="divisi"]:checked').value;
+
+			// Load the content based on the selected divisi value
+			loadContent("divisi/" + selectedValue + ".html");
+			}
 			//counting from 0 to value
 			  function startCountAnimation(element, targetValue) {
 				  const duration = 2000; // 2 seconds
@@ -117,18 +145,22 @@
 					}
 				  }, frameDuration);
 				}
-			  
-				const countElements = document.querySelectorAll(".count");
-				countElements.forEach((element) => {
-				  const targetValue = parseInt(element.getAttribute("value"));
-				  startCountAnimation(element, targetValue);
+
+				$(document).ready(function(){
+				$('.count').viewportChecker({
+				classToAdd: 'visible',
+				offset: 100,
+				repeat: false,
+				callbackFunction: function(elem, action){
+					const countElements = document.querySelectorAll(".count");
+					countElements.forEach((element) => {
+					const targetValue = parseInt(element.getAttribute("value"));
+					startCountAnimation(element, targetValue);
+					});
+				}
+				});
 				});
 		</script>
-		
-		<!-- JS -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-		<!-- JS end -->
 	</body>
 	<?php
 		//footer
