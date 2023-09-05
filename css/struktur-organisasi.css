@@ -5,12 +5,11 @@
 	font-size: 35px;
 }
 .pageone{
-	background-color: #27355b; 
-	color: white;
+	color: black;
 }
 .division-title{
 	font-size: 70px;
-	color: white;
+	color: rgb(0, 0, 0);
 }
 .divisi-button{
 	position: -webkit-sticky; /* Safari */

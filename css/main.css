@@ -1,14 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 html *{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif, 'Bebas Neue', sans-serif;
 }
 body{
-    background-color: #6381bc;
+    background-color: #fff;
 }
 .bg-main{
-    background-color: #6381bc;
+    background-color: #fff;
 }
 .bg-alt1{
     background-color: #E8B7C5;
+}
+
+.bgparent {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 25%, transparent 100%);
+}
+
+.bgppi {
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 50%,
+  rgba(255,255,255,1)), url(../img/PPI.png);
+}
+
+.transition {
+  height: 100px;
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 255, 255));
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5em;
+}
+
+.content {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
 }
 
 footer{
@@ -43,9 +69,6 @@ footer{
 }
 .section1{
     color: white;
-}
-.title{
-    font-size: 50px;
 }
 .aboutbutton{
     font-size: 20px;
@@ -168,7 +191,7 @@ footer{
 }
 .transition-footer-div{
   height: 300px;
-  background: linear-gradient(#6381bc, #e8b7c5);
+  background: linear-gradient(#e9e9e9, #000000);
 }
 .count {
   font-size: 35px;
@@ -184,4 +207,55 @@ footer{
   to {
     opacity: 1;
   }
+}
+
+.image-container {
+	position: relative;
+	width: 400px;
+	border-radius: 10px;
+  }
+  
+  .image-container img {
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+  }
+  
+  .gradient-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, transparent, black);
+	border-radius: 10px;
+  }
+  .image-text {
+	position: absolute;
+	width: 100%;
+  bottom: -1em;
+	color: white;
+	text-align: center;
+	transform: translateY(-100%);
+	z-index: 1;
+  }
+  .image-container .gradient-overlay,
+.image-container .image-text {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s linear;
+}
+
+/* Hide the overlay and text initially */
+.image-container .gradient-overlay,
+.image-container .image-text {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* When the container is hovered, show the overlay and text */
+.image-container:hover .gradient-overlay,
+.image-container:hover .image-text {
+  opacity: 1;
+  visibility: visible;
 }
