@@ -15,11 +15,26 @@
 	include 'core/navbar.html';
 	?>
 	<div class="pageone">
-		<div class="container-fluid text-center page-title-div" style="height: 300px; justify-content: center; align-items: center; display: flex;">
-			<p class="page-title"><b>Struktur Organisasi</b></p>
+		<div class="container-fluid text-center page-title-div" style="height: 200px; justify-content: center; align-items: center; display: flex;">
+			<p class="page-title neue" style="font-size: 5em;">Struktur Organisasi</p>
 		</div>
 		<!-- group photo -->
-		<img src="https://xn--ep5a.xyz/all.jpeg" style="width: 100%; max-height: 93vh; object-fit: cover;">
+		<div class="d-flex justify-content-center">
+			<div class="SO-container">
+				<div class="SO-slide-container">
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/BPHH.png">
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/KEWIRUS.png">
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/INTELEK.png">
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/DPO.png">
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/ADVOK.png">
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/SOSMAS.png">
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/SEGAYA.png">
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/MEDKOM.png">
+				</div>
+			</div>
+
+			<!-- <img src="https://xn--ep5a.xyz/all.jpeg" style="width: 75%; max-height: 75vh; object-fit: cover;"> -->
+		</div>
 		<!-- -->
 		<!-- Title section -->
 		<div class="container-fluid text-center">
@@ -48,57 +63,57 @@
 		<div class="d-flex flex-wrap justify-content-center divisi-button">
 			<div class="p-2">
 				<input type="radio" class="btn-check" name="divisi" onclick="updatePage()" id="BPH" value="BPH">
-				<label class="btn btn-outline-dark btn-sosmed btn-filter " for="BPH">
-					BPH
+				<label class="btn btn-outline-dark" for="BPH">
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/BPHH.png">BPH
 				</label>
 			</div>
 			<div class="p-2">
 				<input type="radio" class="btn-check" name="divisi" onclick="updatePage()" id="Advokasi" value="Advokasi">
 				<label class="btn btn-outline-dark btn-sosmed btn-filter " for="Advokasi">
-					Advokasi
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/ADVOK.png">ADVOKASI
 				</label>
 			</div>
 			<div class="p-2">
 				<input type="radio" class="btn-check" name="divisi" onclick="updatePage()" id="DPO" value="DPO">
 				<label class="btn btn-outline-dark btn-sosmed btn-filter" for="DPO">
-					DPO
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/DPO.png">DPO
 				</label>
 			</div>
 			<div class="p-2">
 				<input type="radio" class="btn-check" name="divisi" onclick="updatePage()" id="Intelek" value="Intelek">
 				<label class="btn btn-outline-dark btn-sosmed btn-filter " for="Intelek">
-					Intelek
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/INTELEK.png">Intelek
 				</label>
 			</div>
 			<div class="p-2">
 				<input type="radio" class="btn-check" name="divisi" onclick="updatePage()" id="SosMas" value="SosMas">
 				<label class="btn btn-outline-dark btn-sosmed btn-filter " for="SosMas">
-					SosMas
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/SOSMAS.png">SosMas
 				</label>
 			</div>
 			<div class="p-2">
 				<input type="radio" class="btn-check" name="divisi" onclick="updatePage()" id="Media" value="Media">
 				<label class="btn btn-outline-dark btn-sosmed btn-filter " for="Media">
-					Media
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/MEDKOM.png">Media
 				</label>
 			</div>
 			<div class="p-2">
 				<input type="radio" class="btn-check" name="divisi" onclick="updatePage()" id="Wirus" value="Wirus">
 				<label class="btn btn-outline-dark btn-sosmed btn-filter " for="Wirus">
-					Wirus
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/KEWIRUS.png">Wirus
 				</label>
 			</div>
 			<div class="p-2">
 				<input type="radio" class="btn-check" name="divisi" onclick="updatePage()" id="Olahraga" value="Olahraga">
 				<label class="btn btn-outline-dark btn-sosmed btn-filter" for="Olahraga">
-					Olahraga
+					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/SEGAYA.png">Olahraga
 				</label>
 			</div>
 		</div>
 		<!--Div for division -->
 		<!-- BPH -->
-		<div class="d-flex justify-content-center mb-lg-5">
-			<div id="division-container" class="shadow w-75"></div>
+		<div class="d-flex justify-content-center my-lg-5">
+			<div id="division-container" class="w-75"></div>
 		</div>
 	</div>
 	<!-- JS -->
@@ -109,6 +124,8 @@
 	<!-- JS end -->
 	<!-- Page JS -->
 	<script>
+		var copy = document.querySelector(".SO-slide-container").cloneNode(true);
+		document.querySelector(".SO-container").appendChild(copy);
 		//load division container
 		function loadContent(url) {
 			const xhttp = new XMLHttpRequest();

@@ -12,7 +12,10 @@ body{
 .bg-alt1{
     background-color: #E8B7C5;
 }
-
+.neue {
+  font-family:'Bebas Neue', sans-serif;
+  font-size: 1.5em;
+}
 .bgparent {
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 25%, transparent 100%);
 }
@@ -75,9 +78,6 @@ footer{
 }
 .btn .rounded-pill{
     border: 20px !important;
-}
-.btn-sosmed {
-    
 }
 #instagram-div{
     display: none;
@@ -227,7 +227,7 @@ footer{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to bottom, transparent, black);
+	background: linear-gradient(to bottom, transparent, rgb(61, 3, 3));
 	border-radius: 10px;
   }
   .image-text {
@@ -258,4 +258,13 @@ footer{
 .image-container:hover .image-text {
   opacity: 1;
   visibility: visible;
+}
+
+.nav-link:hover {
+  color:#CD201F !important;
+}
+
+.navbarbg {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.692);
 }
