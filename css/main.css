@@ -1,54 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@font-face {
+  font-family: "SpotifyFontBold";
+  src: url("../font/GothamMedium.ttf");
+}
+@font-face {
+  font-family: "SpotifyFontRegular";
+  src: url("../font/GothamBook.ttf");
+}
+@font-face {
+  font-family: "Boris";
+  src: url("../font/Boris.ttf");
+}
+@font-face {
+  font-family: "Pocket";
+  src: url("../font/Pocket_Font-Regular.ttf");
+}
+html * {
+  font-family: "Open Sans", sans-serif, "SpotifyFontBold", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f5f5f5;
+  transform-style: preserve-3d;
+}
+h1,
+h2,
+h3,
+a {
+  font-family: "SpotifyFontBold";
+  letter-spacing: -1px;
+}
+h4,
+p {
+  font-family: "SpotifyFontRegular";
+  letter-spacing: -1px;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-html *{
-    font-family: 'Open Sans', sans-serif, 'Bebas Neue', sans-serif;
-}
-body{
-    background-color: #fff;
-}
-.bg-main{
-    background-color: #fff;
-}
-.bg-alt1{
-    background-color: #E8B7C5;
-}
 .neue {
-  font-family:'Bebas Neue', sans-serif;
-  font-size: 1.5em;
-}
-.bgparent {
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 25%, transparent 100%);
+  font-family: "SpotifyFontBold";
 }
 
+.title {
+  font-size: 100px;
+  letter-spacing: -5px;
+}
+
+.event-title {
+  font-size: 50px;
+  letter-spacing: -1px;
+}
 .bgppi {
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 50%,
-  rgba(255,255,255,1)), url(../img/PPI.png);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 50%,
+      #f5f5f5
+    ),
+    url(../img/PPI-GIF.gif);
+  background-size: cover;
 }
 
 .transition {
   height: 100px;
-  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 255, 255));
-}
-
-.title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 5em;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgb(255, 255, 255)
+  );
 }
 
 .content {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2em;
 }
 
-footer{
-    background-color: #E8B7C5;
-    width: 100%;
-    padding: 20px;
+footer {                                      
+  width: 100%;
+  padding: 20px;
 }
-.footer-right{
-    font-size: 30px;
-    text-align: right;
-    margin-top:-7px;
+.footer-right {
+  font-size: 30px;
+  text-align: right;
+  margin-top: -7px;
 }
 @media only screen and (max-width: 720px) {
   .footer-right {
@@ -56,9 +88,9 @@ footer{
     text-align: center;
   }
 }
-.footer-left{
-    font-size: 30px;
-    text-align: left;
+.footer-left {
+  font-size: 30px;
+  text-align: left;
 }
 @media only screen and (max-width: 720px) {
   .footer-left {
@@ -66,30 +98,30 @@ footer{
     text-align: center;
   }
 }
-.still-black{
-    color: inherit;
-    text-decoration: none;
+.still-black {
+  color: inherit;
+  text-decoration: none;
 }
-.section1{
-    color: white;
+.section1 {
+  color: white;
 }
-.aboutbutton{
-    font-size: 20px;
+.aboutbutton {
+  font-size: 20px;
 }
-.btn .rounded-pill{
-    border: 20px !important;
+.btn .rounded-pill {
+  border: 20px !important;
 }
-#instagram-div{
-    display: none;
+#instagram-div {
+  display: none;
 }
-#facebook-div{
-    display: none;
+#facebook-div {
+  display: none;
 }
-#youtube-div{
-    display: none;
+#youtube-div {
+  display: none;
 }
-#spotify-div{
-    display: none;
+#spotify-div {
+  display: none;
 }
 .horizontal-line {
   display: inline-block;
@@ -99,29 +131,26 @@ footer{
   margin-bottom: 30px;
   margin-top: 20px;
 }
-.spotify-text{
-    
+.btn-spotify {
+  background-color: #61ce70;
+  color: white;
+  margin-top: 20px;
 }
-.btn-spotify{
-    background-color: #61ce70;
-    color: white;
-    margin-top: 20px;
+.btn-facebook {
+  background-color: #2374e1;
+  color: white;
+  margin-top: 20px;
 }
-.btn-facebook{
-    background-color: #2374e1;
-    color: white;
-    margin-top: 20px;
+.btn-youtube {
+  background-color: #cd201f;
+  color: white;
+  margin-top: 20px;
 }
-.btn-youtube{
-    background-color: #CD201F;
-    color: white;
-    margin-top: 20px;
-}
-.btn-instagram{
-    margin-top: 20px;
-    border: 1px solid #e4405f;
-    color: #e4405f;
-    background-color: transparent;
+.btn-instagram {
+  margin-top: 20px;
+  border: 1px solid #e4405f;
+  color: #e4405f;
+  background-color: transparent;
 }
 .btn-instagram:hover {
   background-color: #e4405f;
@@ -132,17 +161,25 @@ footer{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.youtube-background{
-    width: 100%;
-    background-color: #fc5757;
-    border-radius: 10px;
+.youtube-background {
+  width: 50%;
+  background-color: #fc5757;
+  border-radius: 10px;
+
 }
-.instagram-color{
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+.instagram-color {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 .elementor-shape-fill {
   fill: #6381bc;
@@ -164,32 +201,32 @@ footer{
     line-height: 1.5;
     border-radius: 0.2rem;
   }
-  .btn-spotify{
+  .btn-spotify {
     margin-top: 0px;
   }
-  .btn-facebook{
+  .btn-facebook {
     margin-top: 0px;
   }
-  .btn-youtube{
-      margin-top: 0px;
+  .btn-youtube {
+    margin-top: 0px;
   }
-  .spotify-text{
+  .spotify-text {
     text-align: center;
   }
   .horizontal-line {
-  display: inline-block;
-  width: 250px;
-  height: 2px;
-  background-color: black;
+    display: inline-block;
+    width: 250px;
+    height: 2px;
+    background-color: black;
   }
 }
-.ytplayer{
+.ytplayer {
   border-radius: 10px;
 }
-.ytplayer.active{
+.ytplayer.active {
   border: 5px solid white;
 }
-.transition-footer-div{
+.transition-footer-div {
   height: 300px;
   background: linear-gradient(#e9e9e9, #000000);
 }
@@ -209,37 +246,49 @@ footer{
   }
 }
 
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .image-container {
-	position: relative;
-	width: 400px;
-	border-radius: 10px;
-  }
-  
-  .image-container img {
-	display: block;
-	width: 100%;
-	border-radius: 10px;
-  }
-  
-  .gradient-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to bottom, transparent, rgb(61, 3, 3));
-	border-radius: 10px;
-  }
-  .image-text {
-	position: absolute;
-	width: 100%;
-  bottom: -1em;
-	color: white;
-	text-align: center;
-	transform: translateY(-100%);
-	z-index: 1;
-  }
-  .image-container .gradient-overlay,
+  position: relative;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgb(61, 3, 3));
+  border-radius: 10px;
+}
+.image-text {
+  position: absolute;
+  width: 100%;
+  bottom: 5em;
+  color: white;
+  text-align: center;
+  transform: translateY(-100%);
+  z-index: 1;
+}
+.image-container .gradient-overlay,
 .image-container .image-text {
   opacity: 1;
   visibility: visible;
@@ -261,10 +310,14 @@ footer{
 }
 
 .nav-link:hover {
-  color:#CD201F !important;
+  color: #cd201f !important;
 }
 
-.navbarbg {
+#navbar {
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.692);
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.5s;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }

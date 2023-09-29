@@ -14,7 +14,7 @@
     include 'core/navbar.html';
     ?>
     <!-- Section 1 - Opening -->
-    <div class="container-fluid d-flex bgppi align-items-center justify-content-center" style="height: 100vh; margin-top: -7em">
+    <div class="container-fluid d-flex bgppi align-items-center justify-content-center" style="min-height: 100vh; margin-top: -7em">
         <div class="section1">
             <div class="d-block d-lg-none text-center">
                 <img src="https://ppiunimalaya.id/wp-content/uploads/2020/05/LOGOPPIUM-1.png" width=60% height=100>
@@ -22,8 +22,8 @@
             <div class="row justify-content-center">
                 <div class="d-flex">
                     <div class="text-center">
-                        <p class="title">PPI UNIVERSITI MALAYA</p>
-                        <a href="/about.php"><button type="button" class="btn rounded-pill btn-outline-light aboutbutton">Lebih Lanjut Tentang Kami</button></a>
+                        <h1 class="title">PPI UNIVERSITI MALAYA</h1>
+                        <a href="/about-us.php"><button type="button" class="btn rounded-pill btn-outline-light aboutbutton">Lebih Lanjut Tentang Kami</button></a>
                     </div>
                 </div>
             </div>
@@ -35,14 +35,16 @@
     <!----->
 
     <div class="d-flex flex-column py-lg-5 mt-5">
-        <div class="title align-self-center">Check out our past events!</div>
+        <div class="align-self-center">
+            <h1 class="title">Check out our past events!</h1>
+        </div>
         <div class="d-flex justify-content-center flex-wrap pt-xxl-5">
             <div class="p-2">
                 <div class="image-container">
                     <img src="/img/ab67616d0000b2730c8ac83035e9588e8ad34b90.jpg" alt="Image">
                     <div class="gradient-overlay"></div>
                     <div class="image-text">
-                        <p class="title">IDFEST</p>
+                        <h1 class="event-title">IDFEST</h1>
                     </div>
                 </div>
             </div>
@@ -51,7 +53,7 @@
                     <img src="/img/ab67616d0000b2730c8ac83035e9588e8ad34b90.jpg" alt="Image">
                     <div class="gradient-overlay"></div>
                     <div class="image-text">
-                        <p class="title">BONDAY</p>
+                        <h1 class="event-title">BONDAY</h1>
                     </div>
                 </div>
             </div>
@@ -60,7 +62,7 @@
                     <img src="/img/ab67616d0000b2730c8ac83035e9588e8ad34b90.jpg" alt="Image">
                     <div class="gradient-overlay"></div>
                     <div class="image-text">
-                        <p class="title">SMTH?</p>
+                        <h3 class="event-title">SMTH?</h3>
                     </div>
                 </div>
             </div>
@@ -72,7 +74,7 @@
     <div class="container-fluid py-lg-5">
         <div class="text-center">
             <h1 class="title">Sosial Media Kami</h1>
-            <div class="d-flex flex-wrap justify-content-center">
+            <div class="d-flex flex-wrap justify-content-center mt-lg-4">
                 <div class="p-2">
                     <input type="radio" class="btn-check" name="sosmed" onclick="updatePage()" id="instagram" value="instagram">
                     <label class="btn btn-outline-dark btn-sosmed b rounded-pill" for="instagram">
@@ -102,8 +104,8 @@
         <!-- Social Media - Instagram section -->
         <div id="instagram-div">
             <br>
-            <div class="row">
-                <div class="col-12 col-lg-6" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <div class="d-flex flex-column justify-content-center align-items-center align-content-center gap-xl-5">
+                <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
                     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/ppiunimalaya/" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                         <div style="padding:16px;"> <a href="https://www.instagram.com/p/CuwIcHix4u2/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
                                 <div style=" display: flex; flex-direction: row; align-items: center;">
@@ -166,8 +168,8 @@
             <br>
             <div id="fb-root"></div>
             <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v17.0" nonce="ox1dy5R1"></script>
-            <div class="row">
-                <div class="col-12 col-lg-6 text-center">
+            <div class="d-flex flex-column justify-content-center align-items-center align-content-center gap-xl-5">
+                <div class="text-center">
                     <div class="fb-page" data-href="https://www.facebook.com/ppiunimalaya" data-tabs="timeline" data-width=380 data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                         <blockquote cite="https://www.facebook.com/ppiunimalaya" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ppiunimalaya">PPI Universiti Malaya</a></blockquote>
                     </div>
@@ -182,29 +184,26 @@
         </div>
         <!-- Social Media - Youtube section -->
         <div id="youtube-div">
-            <br>
-            <div class="row">
-                <div class="col-12 col-lg-6 text-center">
-                    <div class="youtube-background">
-                        <iframe id="ytVideo" width=96% style="aspect-ratio: 16/9; margin-top: 15px; border-radius: 10px;" src="https://www.youtube.com/embed/-8AkpaFBYJM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="d-flex flex-column justify-content-center align-items-center align-content-center gap-xl-5">
+                <div class="youtube-background text-center">
+                    <iframe id="ytVideo" width=96% style="aspect-ratio: 16/9; margin-top: 15px; border-radius: 10px;" src="https://www.youtube.com/embed/-8AkpaFBYJM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-                        <div class="d-flex justify-content-center">
-                            <div class="p-1">
-                                <img src="https://i.ytimg.com/vi/-8AkpaFBYJM/hqdefault.jpg" width=90% onclick="ytplayer(this)" value="-8AkpaFBYJM" class="ytplayer active">
-                            </div>
-                            <div class="p-1">
-                                <img src="https://i.ytimg.com/vi/PLIh1biG-Hs/hqdefault.jpg" width=90% onclick="ytplayer((this))" value="PLIh1biG-Hs" class="ytplayer">
-                            </div>
-                            <div class="p-1">
-                                <img src="https://i.ytimg.com/vi/xlrPBezQDY8/hqdefault.jpg" width=90% onclick="ytplayer((this))" value="xlrPBezQDY8" class="ytplayer">
-                            </div>
-                            <div class="p-1">
-                                <img src="https://i.ytimg.com/vi/TgRZqmlTxdc/hqdefault.jpg" width=90% onclick="ytplayer((this))" value="TgRZqmlTxdc" class="ytplayer">
-                            </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="p-1">
+                            <img src="https://i.ytimg.com/vi/-8AkpaFBYJM/hqdefault.jpg" width=90% onclick="ytplayer(this)" value="-8AkpaFBYJM" class="ytplayer active">
+                        </div>
+                        <div class="p-1">
+                            <img src="https://i.ytimg.com/vi/PLIh1biG-Hs/hqdefault.jpg" width=90% onclick="ytplayer((this))" value="PLIh1biG-Hs" class="ytplayer">
+                        </div>
+                        <div class="p-1">
+                            <img src="https://i.ytimg.com/vi/xlrPBezQDY8/hqdefault.jpg" width=90% onclick="ytplayer((this))" value="xlrPBezQDY8" class="ytplayer">
+                        </div>
+                        <div class="p-1">
+                            <img src="https://i.ytimg.com/vi/TgRZqmlTxdc/hqdefault.jpg" width=90% onclick="ytplayer((this))" value="TgRZqmlTxdc" class="ytplayer">
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-5 d-flex flex-column align-items-center justify-content-center">
+                <div class="d-flex flex-column align-items-center justify-content-center">
                     <h1 style="text-align: center;">
                         Follow our <span style="color: #CD201F;">Youtube</span> to know more about <span style="color: #CD201F;">Universiti Malaya</span>!
                     </h1>
@@ -214,9 +213,9 @@
         </div>
         <!-- Social Media - Spotify section -->
         <div id="spotify-div">
-            <div class="row">
-                <div class="col-12 col-lg-6 text-center">
-                    <img src="https://ppiunimalaya.id/wp-content/uploads/2022/09/asdhg.png" width=100%>
+            <div class="d-flex flex-column justify-content-center align-items-center align-content-center gap-xl-5">
+                <div class="text-center">
+                    <img src="https://ppiunimalaya.id/wp-content/uploads/2022/09/asdhg.png" width=50%>
                 </div>
                 <div class="col-12 col-lg-5 d-flex flex-column align-items-center justify-content-center">
                     <h1 style="text-align: center;">
@@ -340,8 +339,11 @@
             });
         });
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <!-- JS end -->
+
+
 </body>
 <?php
 //footer

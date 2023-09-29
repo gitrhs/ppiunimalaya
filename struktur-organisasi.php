@@ -32,26 +32,24 @@
 					<img src="https://ppiunimalaya.id/wp-content/uploads/2023/09/MEDKOM.png">
 				</div>
 			</div>
-
-			<!-- <img src="https://xn--ep5a.xyz/all.jpeg" style="width: 75%; max-height: 75vh; object-fit: cover;"> -->
 		</div>
 		<!-- -->
 		<!-- Title section -->
-		<div class="container-fluid text-center">
-			<br>
-			<p class="kepengurusan-ppium"><b>Kepengurusan PPI-UM 2023</b></p>
+		<div class="container-fluid text-center" id="kepengurusan-bg">
+
+			<p class="kepengurusan-ppium neue" style="font-size:50px;">Kepengurusan PPI-UM 2023</p>
 			<div class="d-flex justify-content-center" style="margin-top: -20px;">
 				<div class="p-4">
 					<p class="count" value="34">0</p>
-					<h5>Pengurus</h5>
+					<h5>PENGURUS</h5>
 				</div>
 				<div class="p-4">
 					<p class="count" value="9">0</p>
-					<h5>Divisi</h5>
+					<h5>DIVISI</h5>
 				</div>
 				<div class="p-4">
 					<p class="count" value="4">0</p>
-					<h5>Penasehat</h5>
+					<h5>PENASEHAT</h5>
 				</div>
 			</div>
 		</div>
@@ -59,7 +57,7 @@
 	<!-- Division Section -->
 	<br>
 	<div class="container-fluid" style="color: black;">
-		<p class="kepengurusan-ppium text-center"><b>Divisi</b></p>
+		<p class="kepengurusan-ppium text-center neue" style="font-size:50px;">Divisi</p>
 		<div class="d-flex flex-wrap justify-content-center divisi-button">
 			<div class="p-2">
 				<input type="radio" class="btn-check" name="divisi" onclick="updatePage()" id="BPH" value="BPH">
